@@ -2,6 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   ${({ theme }) => `
+    :root {
+      --padding-horizontal: 1.6rem;
+    }
+
     * {
       margin:0;
       padding:0;
@@ -17,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
 
     html {
       font-size: 62.5% !important;
+
+      @media (max-width: ${theme.breakPoints.sm}) {
+        font-size: 55.5% !important;
+      }
     }
 
     html,
@@ -31,20 +39,42 @@ const GlobalStyle = createGlobalStyle`
       font-family: ${theme.fonts.family};
       font-size: ${theme.fonts.sizes.normal};
       color: ${theme.colors.text.primary};
+      line-height: 2.4rem;
       overflow-x: hidden;
+      font-weight: 400;
+    }
+
+    a {
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: ${theme.colors.primary};
+      }     
+    }
+
+    p {
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: PlusJakarta;
+      src: url(/assets/fonts/PlusJakartaSans-Regular.ttf);
       font-weight: 400;
     }
 
     @font-face {
       font-family: PlusJakarta;
-      src: url(/assets/fonts/PlusJakartaText-Regular.otf);
-      font-weight: normal;
+      src: url(/assets/fonts/PlusJakartaSans-Bold.ttf);
+      font-weight: 700;
     }
 
     @font-face {
       font-family: PlusJakarta;
-      src: url(/assets/fonts/PlusJakartaText-Bold.otf);
-      font-weight: bold;
+      src: url(/assets/fonts/PlusJakartaSans-ExtraBold.ttf);
+      font-weight: 800;
     }
   `}
 `;
