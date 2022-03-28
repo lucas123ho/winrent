@@ -55,4 +55,8 @@ export const Content = styled.div`
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+    width: 100%;
+  }
 `;

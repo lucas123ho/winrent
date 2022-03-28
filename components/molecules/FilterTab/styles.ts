@@ -20,11 +20,20 @@ export const Shadow = styled.div`
 export const TabWrapper = styled.div`
   position: relative;
   z-index: 2;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+    width: 100%;
+  }
 `;
 
 export const FieldsWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
   button {
     padding: 1.6rem 3.2rem;
@@ -36,6 +45,15 @@ export const Field = styled.div`
   margin-right: 4rem;
   position: relative;
 
+  @media (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+    width: auto !important;
+    padding: 0;
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
   &:after {
     content: " ";
     display: block;
@@ -46,5 +64,9 @@ export const Field = styled.div`
     height: 4rem;
     width: 1px;
     background-color: ${({ theme }) => theme.colors.borderColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+      display: none;
+    }
   }
 `;

@@ -9,43 +9,47 @@ const Header = () => {
     <S.Wrapper>
       <S.Container>
         <Logo navigateTo="/" />
-        <Menu
-          items={[
-            {
-              text: "Alugar",
-              navigateTo: "/alugar",
-            },
-            {
-              text: "Comprar",
-              navigateTo: "/comprar",
-            },
-            {
-              text: "Vender",
-              navigateTo: "/vender",
-            },
-            {
-              text: "Gerenciar Propriedade",
-              navigateTo: "/gerenciar",
-              dropdown: true,
-            },
-            {
-              text: "Recursos",
-              navigateTo: "/recursos",
-              dropdown: true,
-            },
-          ]}
-        />
-        <ButtonGroup
-          buttons={[
-            {
-              text: "Entrar",
-              fill: "outlined",
-            },
-            {
-              text: "Cadastrar",
-            },
-          ]}
-        />
+        <S.MenuWrapper>
+          <Menu
+            items={[
+              {
+                text: "Alugar",
+                navigateTo: "/alugar",
+              },
+              {
+                text: "Comprar",
+                navigateTo: "/comprar",
+              },
+              {
+                text: "Vender",
+                navigateTo: "/vender",
+              },
+              {
+                text: "Gerenciar Propriedade",
+                navigateTo: "/gerenciar",
+                dropdown: true,
+              },
+              {
+                text: "Recursos",
+                navigateTo: "/recursos",
+                dropdown: true,
+              },
+            ]}
+          />
+        </S.MenuWrapper>
+        <S.ButtonsWrapper>
+          <ButtonGroup
+            buttons={[
+              {
+                text: "Entrar",
+                fill: "outlined",
+              },
+              {
+                text: "Cadastrar",
+              },
+            ]}
+          />
+        </S.ButtonsWrapper>
       </S.Container>
     </S.Wrapper>
   );
