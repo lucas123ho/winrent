@@ -17,3 +17,5 @@ export const HeroWrapper = styled.section`
   margin-top: 9.6rem;
   width: 100vw;
 `;
+
+export const SiteMapWrapper = styled.section``;
