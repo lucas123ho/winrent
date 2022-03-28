@@ -3,8 +3,8 @@ const theme = {
     primary: "#7065F0",
     secondary: "#E0DEF7",
     white: "#FFFFFF",
-    lightGrey: "#F7F7FD",
-    grey: "#6C727F",
+    lightGray: "#F7F7FD",
+    gray: "#6C727F",
     borderColor: "#F0EFFB",
     labelColor: "rgba(0, 22, 25, 0.7)",
     text: {

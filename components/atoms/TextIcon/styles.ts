@@ -8,7 +8,7 @@ export const Wrapper = styled.div<TextIconDefaultProps>`
 
   span {
     font-size: ${({ size }) => styleModifier[size || "normal"].span.fontSize};
-    color: ${({ theme }) => theme.colors.grey};
+    color: ${({ theme }) => theme.colors.gray};
     margin-left: 0.8rem;
     line-height: ${({ size }) =>
       styleModifier[size || "normal"].span.lineHeight};

@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
   }
 
   .react-datepicker__header {
-    background-color: ${({ theme }) => theme.colors.lightGrey};
+    background-color: ${({ theme }) => theme.colors.lightGray};
     border-bottom: 1.5px solid ${({ theme }) => theme.colors.borderColor};
   }
 
