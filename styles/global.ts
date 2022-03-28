@@ -76,6 +76,23 @@ const GlobalStyle = createGlobalStyle`
       src: url(/assets/fonts/PlusJakartaSans-ExtraBold.ttf);
       font-weight: 800;
     }
+
+    ::-webkit-scrollbar {
+      width: 1.4rem;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: ${theme.colors.lightGray}; 
+    }
+     
+    ::-webkit-scrollbar-thumb {
+      background: ${theme.colors.gray}; 
+      border-radius: 0.8rem;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${theme.colors.labelColor};  
+    }
   `}
 `;
 
