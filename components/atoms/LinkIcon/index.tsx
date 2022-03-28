@@ -48,6 +48,6 @@ const LinkIcon = ({ icon, navigateTo, newTab = true, opacity = 1 }: Props) => {
       <a style={{ opacity }}>{renderIconImage()}</a>
     </Link>
   );
-};
+}
 
 export default LinkIcon;
